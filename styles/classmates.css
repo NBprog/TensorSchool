@@ -1,0 +1,321 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  	margin: auto;
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 64px 10px 80px;
+
+	position: absolute;
+	width: 800px;
+	height: 185px;
+	left: 320px;
+	top: 0px;
+
+	background: #FFFFFF;
+}
+
+.header__container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 233px;
+	height: 41px;
+	left: 10px;
+	top: 64px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 10px 0px;
+}
+
+.header__icon{
+	position: static;
+	width: 41px;
+	height: 41px;
+	left: 0px;
+	top: 0px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.header__title{
+	position: static;
+	width: 180px;
+	height: 31px;
+	left: 53px;
+	top: 5px;
+
+	font-family: TensorFont;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+
+	color: #333333;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__content__left{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: absolute;
+	width: 392px;
+	height: 784px;
+	left: 320px;
+	top: 185px;
+}
+
+.body__content__right{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: absolute;
+	width: 392px;
+	height: 336px;
+	left: 712px;
+	top: 185px;
+	margin: 0 0 0 30px;
+}
+
+.body__item__frame{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 16px 0px 16px 16px;
+
+	position: static;
+	width: 392px;
+	height: 112px;
+	left: 0px;
+	top: 112px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 0px;
+}
+
+.body__flex__item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 284px;
+	height: 80px;
+	left: 108px;
+	top: 16px;
+
+
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__press__area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 47px;
+	height: 39px;
+	left: 224px;
+	top: 20.5px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__student__avatar{
+	position: static;
+	width: 80px;
+	height: 80px;
+	left: 16px;
+	top: 16px;
+
+	border-radius: 8px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__text__area{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 212px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__delete__container{
+	display: flex;
+	position: relative;
+	left: 25.53%;
+	right: 25.53%;
+	top: 20.51%;
+	bottom: 20.51%;
+
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 3px 0px;
+}
+
+.body__delete{
+	display: none;
+}
+
+.body__item__frame:hover .body__delete{
+	display: flex;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	height: 23px;
+	width: 23px;
+	background: #7A91B5;
+}
+
+.body__text__container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 212px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__name__student{
+	position: static;
+	width: 212px;
+	height: 29px;
+	left: 0px;
+	top: 0px;
+
+	font-family: San Francisco;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #333333;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 4px 0px;
+}
+
+.body__student__info{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 205px;
+	height: 17px;
+	left: 0px;
+	top: 33px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 4px 0px;
+}
+
+.body__student__sity{
+	position: static;
+	width: 99px;
+	height: 17px;
+	left: 106px;
+	top: 0px;
+
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: #7A91B5;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 26px;
+}
+
+.body__student__university{
+	position: static;
+	width: 90px;
+	height: 17px;
+	left: 0px;
+	top: 0px;
+
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: #7A91B5;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0;
+}

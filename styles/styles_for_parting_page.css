@@ -1,0 +1,154 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  	margin: auto;
+}
+
+
+.header{
+	display:  flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 64px 10px 80px;
+
+	position: absolute;
+	width: 800px;
+	height: 185px;
+	left: 320px;
+	top: 0p;
+
+	background: #FFFFFF;
+
+
+}
+
+.header__icon{
+	position: static;
+	width: 41px;
+	height: 41px;
+	left:  0px;
+	top: 0px;
+
+	flex:  none;
+	order:  0;
+	flex-grow:  0;
+	margin:  0px 12px;
+}
+
+.header__container {
+	display:  flex;
+	flex-direction: row;
+	align-items: center;
+	padding:  0px;
+
+	position: static;
+	width: 233px;
+	height: 41px;
+	left: 10px;
+	top: 64px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin:  10px 0px;
+}
+
+.header__title{
+	position: static;
+	width: 180px;
+	height: 31px;
+	left: 53px;
+	top: 5px;
+
+	font-family: TensorFont;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+
+	color: #333333 ;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 12px;
+}
+
+.body__container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: absolute;
+	width: 800px;
+	height: 341px;
+	left: 320px;
+	top: 185px;
+}
+
+.body__content__left {
+	position:  static;
+	width: 390px;
+	height: 341px;
+	left: 410px;
+	top: 0px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 4px rgba(45, 90, 125, 0.1);
+	border-radius: 8px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 20px;
+}
+
+.body__content__right {
+	position:  absolute;
+	width: 390px;
+	height: 341px;
+	left: 410px;
+	top: 0px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 4px rgba(45, 90, 125, 0.1);
+	border-radius: 8px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 20px;
+}
+
+.body__image_1, .body__image_2 {
+	position: static;
+	width: 390px;
+	height: 231px;
+	left:  0px;
+	top:  0px;
+}
+
+.body__text_1, .body__text_2 {
+	position: absolute;
+	width: 390px;
+	height: 110px;
+	left: 0px;
+	top: 231px;
+}
+
+.body__label{
+	position: absolute;
+	width: 168px;
+	height: 21px;
+	left: 111px;
+	top:  45px;
+
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+
+	color: #333333;
+}

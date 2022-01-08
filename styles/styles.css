@@ -1,0 +1,168 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+  	justify-content: center;
+  	margin: auto;
+}
+
+.header__container{
+	display:  flex;
+	flex-direction: column;
+	align-items:  center;
+	padding: 0px;
+
+	position: static;
+	width: 565px;
+	height: 134px;
+	left: 147px;
+	top: 0px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 16px 0px;
+
+
+}
+.header {
+	display:  flex;
+	flex-direction: column;
+	align-items: center;
+	padding:  0px;
+
+	position: static;
+	width:  565px;
+	height: 134px;
+	left: 117.5px;
+	top:  0px;
+
+	flex:  none;
+	order:  0;
+	flex-grow: 0;
+	margin: 80px 0px;
+
+
+}
+
+.header__icon {
+	position: static;
+	width: 74px;
+	height: 74px;
+	left:  98.5px;
+	top: 0px;
+
+	flex:  none;
+	order: 0;
+	flex-grow: 0;
+	margin:  16px 0px;
+
+}
+
+.header__title {
+	position: static;
+	width: 565px;
+	height: 47px;
+	top:  90px;
+	left: 0.5px;
+
+	font-family: TensorFont;
+	font-style: normal;
+	font-weight:  700;
+	font-size: 36px;
+	line-height: 47px;
+	text-align: center;
+
+	color: #333333;
+
+	flex: none;
+	order:  1;
+	flex-grow: 0;
+	margin:  16px 0px;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+
+	position: absolute;
+	width:  800px;
+	height: 618px;
+	
+	text-align: center;
+
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 526px;
+	height: 404px;
+	left: 137px;
+	top: 214px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin:  80px 0px;	
+}
+
+.body__image {
+	position: static;
+	width:  294px;
+	height: 251px;
+	left: 116px;
+	top: 0px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 64px 0px;
+}
+
+.body__container {
+	display:  flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 16px;
+
+	position: static;
+	width:  526px;
+	height:  89px;
+	left:  0px;
+	top: 315px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 64px 0px;
+}
+
+.text {
+	position: static;
+	width: 526px;
+	height: 69px;
+	left: 0px;
+	top: 10px;
+
+	font-family: SF UI Display;
+	font-style:  normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 126.84%;
+
+	text-align: center;
+	color: #333333;
+
+	flex: none;
+	order: 0;
+	flex-grow:  0;
+	margin:  0px 10px;
+}
