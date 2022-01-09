@@ -1,0 +1,286 @@
+.body__window__input{
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px 10px 10px 60px;
+
+	position: fixed;
+	width: 1350px;
+	height: 721px;
+	left: calc(50% - 1350px/2);
+	top: calc(50% - 721px/2 - 0.5px);
+
+	background: #FFFFFF;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.body__window__section__buttons{
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 26px 0px;
+
+	position: static;
+	width: 1225px;
+	height: 106px;
+	left: 60px;
+	top: 564px;
+
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	margin: 10px 0px;
+}
+
+.body__window__header{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 4px 438px;
+
+	position: static;
+	width: 1225px;
+	height: 50px;
+	left: 60px;
+	top: 10px;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 10px 0px;
+}
+
+.body__window__title{
+	position: static;
+	width: 349px;
+	height: 42px;
+	left: calc(50% - 349px/2);
+	top: calc(50% - 42px/2);
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+
+	color: #000000;
+
+
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.body__window__container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 1246px;
+	height: 468px;
+	left: 60px;
+	top: 86px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 10px 0px;
+}
+
+.body__window__container__names{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 44px 10px;
+
+	position: static;
+	width: 286px;
+	height: 468px;
+	left: 0px;
+	top: 0px;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 24px;
+}
+
+.body__window__title__name{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 12px 74px;
+
+	position: static;
+	width: 256px;
+	height: 45px;
+	left: 10px;
+	top: 210px;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	margin: auto;
+}
+
+.body__window__title__name__text{
+	position: static;
+	width: 108px;
+	height: 21px;
+	left: 74px;
+	top: 12px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+
+
+	text-align: center;
+
+	color: #000000;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.body__window__container__input__text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 44px 10px;
+
+	position: static;
+	width: 915px;
+	height: 468px;
+	left: 310px;
+	top: 0px;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 24px;
+}
+
+.body__window__input__text{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 10px;
+
+	position: static;
+	width: 895px;
+	height: 48px;
+	left: 10px;
+	top: 44px;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: auto;
+}
+
+.body__window__button__cancel{
+	position: static;
+	width: 282px;
+	height: 54px;
+	left: 943px;
+	top: 26px;
+
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 10px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 661px;
+}
+
+.body__window__button__cancel__text{
+	position: absolute;
+	width: 282px;
+	height: 28px;
+	left: calc(50% - 282px/2);
+	top: calc(50% - 28px/2 + 1px);
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.body__window__button__OK{
+	position: static;
+width: 282px;
+height: 54px;
+left: calc(50% - 282px/2 - 471.5px);
+top: calc(50% - 54px/2);
+
+border: 1px solid #000000;
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.body__window__button__OK__text{
+	position: absolute;
+	width: 282px;
+	height: 28px;
+	left: calc(50% - 282px/2);
+	top: calc(50% - 28px/2 + 1px);
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.

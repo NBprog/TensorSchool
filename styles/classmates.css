@@ -104,8 +104,8 @@ body {
 	padding: 16px 0px 16px 16px;
 
 	position: static;
-	width: 392px;
-	height: 112px;
+	width: 420px;
+	height: 90px;
 	left: 0px;
 	top: 112px;
 
@@ -113,9 +113,19 @@ body {
 	order: 1;
 	flex-grow: 0;
 	margin: 0px 0px;
+
+	border: none;
+	box-sizing: none;
+	border-radius: none;
 }
 
-.body__flex__item{
+ .body__item__frame:hover {
+
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
+
+.body__flex__item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;

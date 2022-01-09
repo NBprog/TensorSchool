@@ -3,9 +3,10 @@ const $studentsSectionRight = document.querySelector('.body__content__right');
 
 const $studentsTemplate = document.querySelector('#studentsTemplate').content;
 
-function renderObject(studentsSection, item){
-	let $studentElement = $studentsTemplate.cloneNode(true);
-	let $studentImage = $studentElement.querySelector(".body__student__avatar");
+const renderObject = (studentsSection, item) =>{
+	const $studentElement = $studentsTemplate.cloneNode(true);
+	const $studentImage = $studentElement.querySelector(".body__student__avatar");
+
 	$studentElement.querySelector('#name').textContent = item.name;
 	$studentElement.querySelector('#university').textContent = item.university;
 	$studentElement.querySelector('#sity').textContent = item.sity; 
@@ -16,6 +17,7 @@ function renderObject(studentsSection, item){
 
 // Получаем данные 
 const renderList = (data) =>{
+
 	data.forEach((item) => {
 		if (item.id <= 7) {
 			renderObject($studentsSectionLeft, item)	
