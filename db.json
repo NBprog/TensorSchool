@@ -1,0 +1,74 @@
+{
+	"students": [
+		{
+			"id": 1,
+			"name": "Мария Иванова",
+			"university": "УГАТУ 2 курс",
+			"sity": "г.Уфа",
+			"avatar_url": "./img/Avatar.png"
+		},
+		{
+			"id": 2,
+			"name": "Владислав Александрович",
+			"university": "КГАСУ 2 курс",
+			"sity":"г.Казань",
+			"avatar_url":"./img/Avatar1.png"
+		},
+		{
+			"id": 3,
+			"name": "Владимир Кон",
+			"university": "УГАТУ 2 курс",
+			"sity":"г.Уфа",
+			"avatar_url":"./img/Avatar2.png"
+		},
+		{
+			"id": 4,
+			"name": "Анна Волкова",
+			"university":"СибГУТИ 2 курс",
+			"sity":"г. Новосибирск",
+			"avatar_url":"./img/Avatar3.png"
+		},
+		{
+			"id": 5,
+			"name": "Александр Еременко",
+			"university":"СГУПС 4 курс",
+			"sity":"г. Новосибирск",
+			"avatar_url": "./img/Avatar4.png"
+		},
+		{
+			"id": 6,
+			"name": "Вероника Андреева",
+			"university":"МГУ 2 курс",
+			"sity":"г. Москва",
+			"avatar_url":"./img/Avatar5.png"
+		},
+		{
+			"id": 7,
+			"name": " Дарья Гришина",
+			"university":"УГАТУ 3 курс",
+			"sity":"г. Уфа",
+			"avatar_url":"./img/Avatar6.png"
+		},
+		{
+			"id": 8,
+			"name": "Антон Николаевич",
+			"university":"ТГУ 4 курс",
+			"sity":"г. Томск",
+			"avatar_url":"./img/Avatar7.png"
+		},
+		{
+			"id": 9,
+			"name": "Святослав Расскольников",
+			"university":"УГАТУ 2 курс",
+			"sity":"г. Уфа",
+			"avatar_url":"./img/Avatar8.png"
+		},
+		{
+			"id": 10,
+			"name": " Алия Красавина",
+			"university":" СибГУТИ 3 курс",
+			"sity":"г. Новосибирск",
+			"avatar_url":"./img/Avatar9.png"
+		}
+	]
+}
