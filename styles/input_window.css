@@ -1,5 +1,13 @@
-.body__window__input{
+.popup__hidden{
 	visibility: hidden;
+}
+
+.popup__open{
+	visibility: visible;
+}
+
+.body__window__input{
+	
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;

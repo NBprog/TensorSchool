@@ -1,12 +1,12 @@
 {
   "students": [
-  	{
-  		"id": 1,
-  		"name": "Мария Иванова",
-  		"university": "УГАТУ 2 курс",
-  		"sity": "г.Уфа",
-  		"avatar_url": "./img/Avatar.png"
-  	},
+    {
+      "id": 1,
+      "name": "Мария Иванова",
+      "university": "УГАТУ 2 курс",
+      "sity": "г.Уфа",
+      "avatar_url": "./img/Avatar.png"
+    },
     {
       "id": 2,
       "name": "Владислав Александрович",
@@ -69,6 +69,27 @@
       "university": " СибГУТИ 3 курс",
       "sity": "г. Новосибирск",
       "avatar_url": "./img/Avatar9.png"
+    },
+    {
+      "name": "asddas asdsad",
+      "university": "dsad",
+      "sity": "asdsa",
+      "avatar_url": "https://yandex.ru/images/search?pos=1&from=tabbar&img_url=https%3A%2F%2Fst.depositphotos.com%2F1157740%2F3755%2Fi%2F950%2Fdepositphotos_37556247-stock-photo-erawan-waterfall-in-kanchanaburi-province.jpg&text=image&rpt=simage",
+      "id": 11
+    },
+    {
+      "name": "ввааныва ываыв",
+      "university": "ываыв",
+      "sity": "ыва",
+      "avatar_url": "https://yandex.ru/images/search?pos=2&from=tabbar&img_url=https%3A%2F%2Fwallbox.ru%2Fwallpapers%2Fmain%2F201628%2F2f693a85dafe939.jpg&text=image&rpt=simage",
+      "id": 12
+    },
+    {
+      "name": "asddasd asd",
+      "university": "asd",
+      "sity": "asd",
+      "avatar_url": "https://yandex.ru/images/search?pos=2&from=tabbar&img_url=https%3A%2F%2Fwallbox.ru%2Fwallpapers%2Fmain%2F201628%2F2f693a85dafe939.jpg&text=image&rpt=simage",
+      "id": 13
     }
   ]
 }

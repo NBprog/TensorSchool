@@ -22,14 +22,12 @@
 			</div>
 		</header>
 		<section class = "body__content__left">
-			<a href="#" style="text-decoration: none;">
-				<div class = "body__container__add">
-					<img src = './img/plus.png' alt = "Add Image" class = "body__image__add">
-					<div class = "body__text__add">
-						<p> Add a student</p>
-					</div>
+			<button id = "button_add" class = "body__container__add">
+				<img src = './img/plus.png' alt = "Add Image" class = "body__image__add">
+				<div class = "body__text__add">
+					<p> Add a student</p>
 				</div>
-			</a>
+			</button>
 			<template id = "studentsTemplate">
 				<div class = "body__item__frame">
 					<a href="#">
@@ -57,7 +55,7 @@
 		<section class = "body__content__right">
 
 		</section>
-		<form class = "body__window__input" > 
+		<form id = "form_student" class = "body__window__input popup__hidden"> 
 			<div class = "body__window__header">
 				<div class = "body__window__title">
 					Редактирование информации о студенте
@@ -75,36 +73,31 @@
 						<p class = "body__window__title__name__text"> Университет </p>
 					</div>
 					<div class ="body__window__title__name">
-						<p class = "body__window__title__name__text"> Курс </p>
+						<p class = "body__window__title__name__text"> Город</p>
 					</div>
 					<div class ="body__window__title__name">
-						<p class = "body__window__title__name__text"> Город </p>
+						<p class = "body__window__title__name__text"> Фотография </p>
 					</div>
 				</div>
 				<div class = "body__window__container__input__text">
-					<div class = "body__window__input__text">
-					</div>
-					<div class = "body__window__input__text">
-					</div>
-					<div class = "body__window__input__text">
-					</div>
-					<div class = "body__window__input__text">
-					</div>
-					<div class = "body__window__input__text">
-					</div>
+					<input name = "name" id = "input_name" type="text" class = "body__window__input__text">
+					<input name = "surname" id = "input_surname" type="text" class = "body__window__input__text">
+					<input name = "university" id = "input_university" type="text" class = "body__window__input__text">
+					<input name = "sity" id = "input_sity" type="text" class = "body__window__input__text">
+					<input name = "url" id="input_img" type ="text" class = "body__window__input__text">
 				</div>
 			</div>
 			<div class = "body__window__section__buttons">
-				<div class = "body__window__button__cancel">
+				<button id = "button_cancel" class = "body__window__button__cancel">
 					<div class = "body__window__button__cancel__text">
 						Отмена 
 					</div>
-				</div>
-				<div class = "body__window__button__OK">
+				</button>
+				<button id = "button_OK" type="submit" class = "body__window__button__OK">
 					<div class = "body__window__button__OK__text">
 						ОК
 					</div>
-				</div>
+				</button>
 			</div>
 
 		</form>
