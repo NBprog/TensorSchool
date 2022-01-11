@@ -80,17 +80,32 @@ class Form {
 const $studentsSectionLeft = document.querySelector('.body__content__left');
 const $studentsSectionRight = document.querySelector('.body__content__right');
 const $studentsTemplate = document.querySelector('#studentsTemplate').content;
-const $buttonAdd = document.querySelector('.body__container__add');
 const $buttonCancel = document.querySelector('#button_cancel');
 const $buttonOK = document.querySelector('#button_OK');
 const $windowTitle = document.querySelector('.body__window__title');
 const $popup = document.querySelector('#form_student');
 const studentsApi = new Api('http://localhost:3000/students', { 'Content-Type': 'application/json'});
 const studentForm = new Form($popup);
+let $buttonAdd = document.querySelector('.body__container__add');
+
+const deleteElements = () =>{
+	$studentsSectionRight.innerHTML = '';
+	$studentsSectionLeft.innerHTML = `
+	<button id = "button_add" class = "body__container__add">
+				<img src = './img/plus.png' alt = "Add Image" class = "body__image__add">
+				<div class = "body__text__add">
+					<p> Add a student</p>
+				</div>
+	</button>`
+	$buttonAdd = document.querySelector('.body__container__add');
+	add_button();
+	
+}
 
 // Получаем данные 
 const renderList = (data) =>{
 
+	deleteElements()
 
 	data.forEach((item) => {
 		if (item.id <= 7) {
@@ -138,7 +153,7 @@ const renderObject = (studentsSection, item) =>{
 				name: $popup.elements[0].value + ' ' + $popup.elements[1].value,
 				university: $popup.elements[2].value,
 				sity: $popup.elements[3].value,
-				url: $popup.elements[4].value
+				avatar_url: $popup.elements[4].value
 		};
 
 		studentsApi.updateItem(item.id, data).then(() => {
@@ -177,31 +192,39 @@ const hidePopUp = () =>{
 	studentForm.closeForm();
 }
 
-$buttonAdd.addEventListener('click', () =>{
-	$windowTitle.textContent = "Добавление информации о студенте";
-	showPopUp();
-	studentForm.init(() =>{
-		const data = {
-			name: $popup.elements[0].value + ' ' + $popup.elements[1].value,
-			university: $popup.elements[2].value,
-			sity: $popup.elements[3].value,
-			avatar_url: $popup.elements[4].value
-		}
-		studentsApi.createItem(data).then((studentData) => {
-			if (studentData.id <= 7) {
-				renderObject($studentsSectionLeft, studentData)	
+const add_button = () =>{
+	$buttonAdd.addEventListener('click', () =>{
+		$windowTitle.textContent = "Добавление информации о студенте";
+		showPopUp();
+		studentForm.init(() =>{
+			const data = {
+				name: $popup.elements[0].value + ' ' + $popup.elements[1].value,
+				university: $popup.elements[2].value,
+				sity: $popup.elements[3].value,
+				avatar_url: $popup.elements[4].value
 			}
-			else if (studentData.id <= 14){
-				renderObject($studentsSectionRight, studentData)	
-			}
-			else{
-				(studentData.id % 2 != 0) ? renderObject($studentsSectionLeft, studentData) : renderObject($studentsSectionRight, studentData)	
-			}
-			clear();
-			hidePopUp();
+			studentsApi.createItem(data).then((studentData) => {
+				if (studentData.id <= 7) {
+					renderObject($studentsSectionLeft, studentData)	
+				}
+				else if (studentData.id <= 14){
+					renderObject($studentsSectionRight, studentData)	
+				}
+				else{
+					(studentData.id % 2 != 0) ? renderObject($studentsSectionLeft, studentData) : renderObject($studentsSectionRight, studentData)	
+				}
+				clear();
+				hidePopUp();
+			});
 		});
-	});
 
+	});
+}
+
+$buttonCancel.addEventListener('click', (event) => {
+	event.preventDefault();
+	clear();
+	hidePopUp();
 });
 
 
