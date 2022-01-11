@@ -84,6 +84,7 @@ const $buttonCancel = document.querySelector('#button_cancel');
 const $buttonOK = document.querySelector('#button_OK');
 const $windowTitle = document.querySelector('.body__window__title');
 const $popup = document.querySelector('#form_student');
+const $popup_window = document.querySelector('.pop_up_container');
 const studentsApi = new Api('http://localhost:3000/students', { 'Content-Type': 'application/json'});
 const studentForm = new Form($popup);
 let $buttonAdd = document.querySelector('.body__container__add');
@@ -169,6 +170,22 @@ const renderObject = (studentsSection, item) =>{
 		});
 
 	});
+
+	$studentImage.addEventListener('mouseover', (event) => {
+        positionX = $studentImage.getBoundingClientRect().left + $studentImage.getBoundingClientRect().width + 10;
+        positionY = $studentImage.getBoundingClientRect().top;
+        $popup_window.style.left = `${positionX}px`;
+        $popup_window.style.top = `${positionY}px`;
+        $popup_window.style.visibility = "visible";
+        document.getElementById("pop-up-image").src = item.avatar_url;
+        document.getElementById("pop-up-university").textContent = `${item.university}`;
+        document.getElementById("pop-up-city").textContent = `${item.sity}`;
+        document.getElementById("pop-up-name").textContent = `${item.name}`;
+       	
+       	setTimeout(() => {
+			$popup_window.style.visibility = "hidden";   
+		}, 5000);
+    })
 }
 
 

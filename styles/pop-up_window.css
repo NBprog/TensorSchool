@@ -1,0 +1,171 @@
+.pop_up_container{
+	position: relative;
+	width: 343px;
+	height: 162px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+}
+
+.pop_up_content{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: absolute;
+	width: 311px;
+	height: 130px;
+	left: 16px;
+	top: 16px;
+}
+
+.pop_up_image{
+	position: static;
+	width: 104px;
+	height: 104px;
+	left: 207px;
+	top: 0px;
+
+
+	border-radius: 8px;
+
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 8px;
+}
+
+.pop_up_text_container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 199px;
+	height: 130px;
+	left: 0px;
+	top: 0px;
+
+
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 8px;
+}
+
+.pop_up_sity_container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 193px;
+	height: 76px;
+	left: 0px;
+	top: 54px;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: auto;
+}
+
+.pop_up_title_container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 191px;
+	height: 21px;
+	left: 0px;
+	top: 0px;
+
+
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 0px 20px;
+}
+
+.pop_up_title{
+	position: static;
+	width: 193px;
+	height: 42px;
+	left: 0px;
+	top: 0px;
+
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+
+	color: #333333;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 4px 0px;
+}
+
+.pop_up_elements_container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 199px;
+	height: 16px;
+	left: 0px;
+	top: 60px;
+
+	flex: none;
+	order: 3;
+	flex-grow: 0;
+	margin: 4px 0px;
+}
+
+.pop_up_text{
+	position: static;
+	width: 177px;
+	height: 14px;
+	left: 22px;
+	top: 1px;
+
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+
+
+	color: #7A91B5;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 6px;
+}
+
+.pop_up_icon{
+	position: static;
+	width: 16px;
+	height: 16px;
+	left: 0px;
+	top: 0px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 6px;
+}
